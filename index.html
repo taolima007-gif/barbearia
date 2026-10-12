@@ -127,5 +127,16 @@
   <footer><div class="wrap foot"><div><strong>Barbearia Senna</strong><br>Vila Paraná · Bom Jardim – PE</div><div>© <span id="year"></span> Barbearia Senna. Todos os direitos reservados.</div><a href="https://www.instagram.com/barbeariasenna_bs/" target="_blank" rel="noopener">@barbeariasenna_bs ↗</a></div></footer>
   <a class="btn wa-float" href="https://wa.me/5581982378213" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">WhatsApp ↗</a>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://eqfctvetecgcfznhzlyh.supabase.co';
+  const SUPABASE_KEY = 'sb_publishable_TZKuENqygWNrPqxCVd8pWA_yt-sANVG';
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+</script>
 </body>
 </html>
