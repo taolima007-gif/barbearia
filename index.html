@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="Barbearia Senna — estilo, cuidado e qualidade em Vila Paraná, distrito de Bizarra, Bom Jardim - PE. Cortes a partir de R$ 15.">
+  <title>Barbearia Senna | Estilo em cada detalhe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#10100f;--panel:#181816;--gold:#d7ad58;--gold2:#f1d58d;--text:#f7f3ea;--muted:#b8b3a8;--line:rgba(215,173,88,.23)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} img{display:block;max-width:100%}.wrap{width:min(1120px,92%);margin:auto}
+    .topline{height:4px;background:linear-gradient(90deg,#6f4b14,var(--gold2),#8e6826)}
+    header{position:sticky;top:0;z-index:20;background:rgba(16,16,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{display:flex;align-items:center;gap:12px;font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:1.5px;font-size:1.2rem}
+    .mark{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:1.35rem;transform:rotate(-3deg)}
+    .brand small{display:block;font:500 .62rem "DM Sans",sans-serif;color:var(--gold);letter-spacing:3px}
+    .navlinks{display:flex;gap:25px;align-items:center;font-size:.88rem;color:#ded9ce}.navlinks a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:3px;background:var(--gold);color:#17140d;font-weight:700;font-size:.9rem;border:1px solid var(--gold);transition:.2s}
+    .btn:hover{background:var(--gold2);transform:translateY(-2px)}.btn.outline{background:transparent;color:var(--gold2)}.btn.outline:hover{background:rgba(215,173,88,.1)}
+    .hero{position:relative;isolation:isolate;min-height:630px;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(16,16,15,.97) 0%,rgba(16,16,15,.86) 44%,rgba(16,16,15,.25) 100%),url("https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=2000&q=85") center/cover}
+    .hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,var(--bg),transparent 30%);pointer-events:none}
+    .hero-content{padding:88px 0 100px;max-width:690px}
+    .eyebrow{color:var(--gold2);font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}
+    h1,h2,h3{font-family:Oswald,sans-serif;text-transform:uppercase;line-height:1.08;margin:0;letter-spacing:.4px}
+    h1{font-size:clamp(3.5rem,8vw,6.7rem);margin:22px 0 20px}h1 span{color:var(--gold2)}.hero p{max-width:500px;color:#d1ccc2;font-size:1.05rem;margin:0 0 28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero-note{margin-top:36px;color:#c8c0b1;font-size:.8rem;letter-spacing:.6px}.hero-note strong{color:var(--gold2)}
+    section{padding:88px 0}.section-head{max-width:650px;margin-bottom:36px}.section-head h2{font-size:clamp(2.4rem,5vw,3.6rem);margin:14px 0}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:linear-gradient(145deg,#1c1c19,#141412);border:1px solid var(--line);padding:28px;min-height:210px;position:relative}
+    .service .num{color:var(--gold);font:500 1rem Oswald,sans-serif;letter-spacing:2px}.service h3{font-size:1.65rem;margin:20px 0 10px}.service p{color:var(--muted);font-size:.92rem;margin:0}.price{display:block;color:var(--gold2);font-size:1.2rem;font-weight:700;margin-top:18px}
+    .feature{background:#171715;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+    .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+    .photo-frame{min-height:400px;position:relative;background:#24231e;border:1px solid var(--line);overflow:hidden}
+    .photo-frame img{width:100%;height:440px;object-fit:cover;filter:saturate(.72)}
+    .photo-frame:after{content:"";position:absolute;inset:12px;border:1px solid rgba(241,213,141,.55);pointer-events:none}
+    .feature-copy h2{font-size:clamp(2.5rem,5vw,3.8rem);margin:15px 0 20px}.feature-copy p{color:var(--muted)}
+    .ticks{list-style:none;padding:0;margin:25px 0;display:grid;gap:12px}.ticks li{display:flex;gap:12px;align-items:center}.ticks li:before{content:"✓";color:var(--gold2);font-weight:700;border:1px solid var(--line);width:24px;height:24px;display:grid;place-items:center;flex-shrink:0}
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.info-card{padding:25px;background:var(--panel);border:1px solid rgba(255,255,255,.07)}.info-card .icon{font-size:1.4rem;color:var(--gold2)}.info-card h3{font-size:1.25rem;margin:13px 0 9px}.info-card p{margin:0;color:var(--muted);font-size:.92rem}
+    .cta{padding:62px 0;background:linear-gradient(110deg,#292116,#171612 70%);border-block:1px solid var(--line)}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:28px}.cta h2{font-size:clamp(2rem,4vw,3.2rem);max-width:650px}.cta p{color:var(--muted);margin:12px 0 0}
+    footer{padding:28px 0;color:#999387;font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.foot strong{color:var(--gold2);font-family:Oswald,sans-serif;letter-spacing:1px;text-transform:uppercase}
+    .wa-float{position:fixed;right:20px;bottom:20px;z-index:30;border-radius:50px;box-shadow:0 8px 30px #0008;padding:14px 18px}
+    @media(max-width:760px){.nav{min-height:68px}.navlinks{display:none}.hero{min-height:590px}.hero:before{background:linear-gradient(90deg,rgba(16,16,15,.94),rgba(16,16,15,.66)),url("https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=1000&q=80") center/cover}.hero-content{padding:75px 0 90px}.services,.info-grid{grid-template-columns:1fr}.service{min-height:unset}.feature-grid{grid-template-columns:1fr;gap:32px}.photo-frame,.photo-frame img{min-height:280px;height:320px}.cta-inner{align-items:flex-start;flex-direction:column}section{padding:66px 0}.wa-float{right:12px;bottom:12px}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="Barbearia Senna - início"><span class="mark">S</span><span>Barbearia Senna<small>Estilo em cada detalhe</small></span></a>
+      <nav class="navlinks" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a><a href="#sobre">A barbearia</a><a href="#informacoes">Informações</a>
+      </nav>
+      <a class="btn" href="https://wa.me/5581982378213" target="_blank" rel="noopener">Fale conosco ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow">Vila Paraná · Bom Jardim, PE</div>
+          <h1>SEU ESTILO.<br><span>SUA MARCA.</span></h1>
+          <p>Mais que um corte: cuidado nos detalhes, atenção a você e aquele visual que combina com sua personalidade.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://wa.me/5581982378213?text=Ol%C3%A1%2C%20Barbearia%20Senna!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Chamar no WhatsApp ↗</a>
+            <a class="btn outline" href="#servicos">Conheça os serviços</a>
+          </div>
+          <div class="hero-note"><strong>CORTES A PARTIR DE R$ 15</strong> &nbsp;·&nbsp; SEGUNDA A SÁBADO, 8H ÀS 18H</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">O que fazemos</div>
+          <h2>Seu visual em boas mãos.</h2>
+          <p>Escolha o cuidado que combina com você. Para consultar os valores de barba e sobrancelha, fale diretamente com a barbearia.</p>
+        </div>
+        <div class="services">
+          <article class="service"><span class="num">01 / CABELO</span><h3>Corte masculino</h3><p>Estilo e acabamento para renovar o visual.</p><span class="price">A partir de R$ 15</span></article>
+          <article class="service"><span class="num">02 / BARBA</span><h3>Barba</h3><p>Cuidado e alinhamento para completar seu estilo.</p><span class="price">Consulte na barbearia</span></article>
+          <article class="service"><span class="num">03 / DETALHES</span><h3>Sobrancelha</h3><p>Acabamento nos detalhes que fazem diferença.</p><span class="price">Consulte na barbearia</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature" id="sobre">
+      <div class="wrap feature-grid">
+        <div class="photo-frame">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1100&q=85" alt="Barbeiro realizando um corte de cabelo" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <div class="eyebrow">Barbearia Senna</div>
+          <h2>Presença no visual.<br><span style="color:var(--gold2)">Confiança no estilo.</span></h2>
+          <p>Um espaço para cuidar do visual e sair se sentindo bem. Chegue, conheça nossos serviços e converse com a gente para tirar suas dúvidas.</p>
+          <ul class="ticks"><li>Atendimento de segunda a sábado</li><li>Cortes a partir de R$ 15</li><li>Pagamento via Pix e cartão</li></ul>
+          <a class="btn" href="https://www.instagram.com/barbeariasenna_bs/" target="_blank" rel="noopener">Siga no Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="informacoes">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Planeje sua visita</div><h2>Informações da barbearia</h2><p>Entre em contato para consultar os valores dos serviços e saber mais antes de vir.</p></div>
+        <div class="info-grid">
+          <article class="info-card"><div class="icon">◷</div><h3>Horário</h3><p>Segunda a sábado<br>Das 8h às 18h</p></article>
+          <article class="info-card"><div class="icon">⌖</div><h3>Localização</h3><p>Vila Paraná, distrito de Bizarra<br>Bom Jardim – Pernambuco</p><p style="margin-top:14px"><a class="btn outline" style="padding:9px 12px" href="https://www.google.com/maps/search/?api=1&query=Vila+Paran%C3%A1%2C+Bizarra%2C+Bom+Jardim%2C+PE" target="_blank" rel="noopener">Ver no mapa ↗</a></p></article>
+          <article class="info-card"><div class="icon">◇</div><h3>Pagamento</h3><p>Aceitamos Pix e cartão.</p><p style="margin-top:10px;color:var(--gold2)">Dúvidas? Chame no WhatsApp.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap cta-inner">
+        <div><div class="eyebrow">Vamos conversar?</div><h2>Seu próximo corte começa aqui.</h2><p>Entre em contato com a Barbearia Senna para consultar os serviços e valores.</p></div>
+        <a class="btn" href="https://wa.me/5581982378213?text=Ol%C3%A1%2C%20Barbearia%20Senna!%20Quero%20consultar%20os%20servi%C3%A7os%20e%20valores." target="_blank" rel="noopener">Falar pelo WhatsApp ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><div><strong>Barbearia Senna</strong><br>Vila Paraná · Bom Jardim – PE</div><div>© <span id="year"></span> Barbearia Senna. Todos os direitos reservados.</div><a href="https://www.instagram.com/barbeariasenna_bs/" target="_blank" rel="noopener">@barbeariasenna_bs ↗</a></div></footer>
+  <a class="btn wa-float" href="https://wa.me/5581982378213" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">WhatsApp ↗</a>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
